@@ -1,0 +1,64 @@
+/* Reset some basic styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('https://img.freepik.com/free-photo/3d-robot-hand-background-ai-technology-side-view_53876-129789.jpg') no-repeat center center fixed;  /* Add the path to your background image */
+    background-size: cover; /* Use 'cover' to fill the entire screen without zooming excessively */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    background-position: center center; /* Center the background image */
+    background-attachment: fixed; /* Keep the background fixed during scroll */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Heading Style */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds depth to the heading */
+}
+
+/* Paragraph Style */
+p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    color: #3f1c1c;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+    width: 300px; /* Set a width for the result box */
+    transition: transform 0.2s; /* Smooth scaling effect on hover */
+}
+
+/* Hover Effect */
+p:hover {
+    transform: scale(1.05); /* Slightly enlarge the box on hover */
+}
+
+/* Button Style */
+button {
+    background-color: #4facfe; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+button:hover {
+    background-color: #00f2fe; /* Change color on hover */
+}

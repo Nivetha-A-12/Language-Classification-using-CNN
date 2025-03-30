@@ -1,0 +1,135 @@
+:root {
+    --bg-color: #1a1a1a; /* Darker background */
+    --container-bg: rgba(50, 50, 50, 0.8); /* Slightly lighter container */
+    --text-color: #f0f0f0; /* Light text color */
+    --primary-color: #4facfe; /* Primary button color */
+    --hover-color: #007bb8; /* Darker hover color */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('https://img.freepik.com/free-photo/3d-robot-hand-background-ai-technology-side-view_53876-129789.jpg') no-repeat center center fixed; /* Use a lighter AI-themed background */
+    background-size: cover; /* Cover the entire body */
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+}
+
+.header, .footer {
+    background-color: rgba(10, 10, 10, 0.5); /* More transparent header/footer */
+    color: var(--text-color);
+    width: 100%;
+    padding: 15px;
+    position: absolute;
+}
+
+.header {
+    top: 0;
+}
+
+.footer {
+    bottom: 0;
+}
+
+.container {
+    background: var(--container-bg);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+    z-index: 1; /* Keep the container above other elements */
+    position: relative; /* To position the container above the header and footer */
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.file-upload {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+input[type="file"] {
+    display: none; /* Hide default file input */
+}
+
+.file-label {
+    display: inline-block;
+    padding: 12px 20px;
+    border: 2px dashed var(--primary-color);
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: var(--primary-color);
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.file-label:hover {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--hover-color);
+}
+
+.submit-btn {
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.1em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: var(--hover-color);
+    transform: scale(1.05);
+}
+
+/* Icons styling */
+.icon {
+    position: absolute;
+    font-size: 80px; /* Adjust size for better fit */
+    color: rgba(255, 255, 255, 0.3); /* Light but subtle */
+}
+
+.icon-left {
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.icon-right {
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
